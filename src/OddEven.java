@@ -11,8 +11,7 @@ class OddOrEven{
 	   Scanner scan = new Scanner(System.in);
 		System.out.println("Hi! What's your name?");
 	   String userName = scan.nextLine();
-	   
-	   
+	   	   
 	  String answer;
 	  
 	  do {
@@ -27,7 +26,7 @@ class OddOrEven{
 	      if (x % 2 == 0 && x <=60 && x >= 26)
 	         System.out.println("Hey, " + userName + "! The number " + x + " is even! ");
 	      
-	      if (x % 2 == 0 && x <=25 )
+	      if (x % 2 == 0 && x >=1 && x <=25 )
 	    	  System.out.println("Hey, " + userName + "!The number " + x + " is even and less than 25!");
 	      
 	      if (x % 2 == 0 && x >60 && x <101)
@@ -36,14 +35,12 @@ class OddOrEven{
 	     if (x % 2 != 0 && x > 60 && x <100)
 	    	 System.out.println("Hey, " + userName + "! The number " + x + " is odd and over 60!");
 	     
-	     if (x % 2 !=0 && x < 60)
+	     if (x % 2 !=0 && x >=0 && x < 60)
 	    	 System.out.println("Hey, " + userName + "! The number " + x + " is odd!");
 	     
 	     System.out.println("Want to try again? (y/n)");
 			answer = scan.next();
-	    	 
-
-	   
+	    	   
 	   
 }
 	  while (answer.equalsIgnoreCase("y"));
